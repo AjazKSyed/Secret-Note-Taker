@@ -1,0 +1,110 @@
+/*
+  Name: Ajaz Syed
+  This is the styles.css page.  It allows the user to change the theme
+  of the screen and hide their content.
+  */
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+h1, body {
+  color: #284B63;
+  margin: 30px 30px 20px 20px;
+  text-align: center;
+  font-size: 65px;
+  text-decoration: underline double;
+}
+
+body, #entry, #text-button, #toggle-visibility, #button-dark, #layered-buttons {
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+body, #entry {
+  color: #0B2027;
+  background-color: #F4D6CC;
+  font-size: 25px;
+  margin: auto;
+  width: 60%;
+  text-decoration: none;
+}
+
+#info {
+  background-color: #284B63;
+  border-radius: 25px;
+  height: 330px;
+  padding: 5px;
+}
+
+#info label {
+  color: #F4F9E9;
+  font-size: 35px;
+  margin: 10px;
+}
+
+#entry {
+  background-color: #E0FBFC;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100px;
+  position: relative;
+  resize: none;
+  border-radius: 5px;
+}
+
+#text-button, #toggle-visibility, #button-dark {
+  background-color: #2D3142;
+  color: #EDE7D9;
+  font-size: 15px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  width: 20%;
+  height: fit-content;
+  border-radius: 10px;
+}
+
+#text-button:hover {
+  background-color: #EDE7D9;
+}
+
+#layered-buttons {
+  display: flex;
+  padding: 20px 140px;
+  height: 35px;
+  justify-content: space-between;
+}
+
+#toggle-visibility, #button-dark {
+  background-color: #C5C3C6;
+  height: 30px;
+  color: #1D2F6F;
+  width: 30%;
+}
+
+#posts, #text-button:hover {
+  color: #2D3142;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+
+.dark-mode {
+  background-color: #212121;
+}
+
+body.dark-mode h1, body.dark-mode, #posts.dark-mode, #entry.dark-mode, #info.dark-mode label {
+  color: #FF7597;
+  background-color: #121212;
+}
+
+#info.dark-mode, #info.dark-mode label, #entry.dark-mode {
+  background-color: #272626e8;
+}
+
+#button-dark.dark-mode, #toggle-visibility.dark-mode, #text-button.dark-mode {
+  color: #ff0266;
+  background-color: #373737;
+}
+
+#text-button.dark-mode:hover, #button-dark.dark-mode:hover, #toggle-visibility.dark-mode:hover {
+  color: #03dac6;
+}
